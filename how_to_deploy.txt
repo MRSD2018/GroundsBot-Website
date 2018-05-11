@@ -1,0 +1,32 @@
+Check out the repo:
+
+git clone https://github.com/MRSD2018/GroundsBot-Website.git
+
+Download and install the Google Cloud SDK (Python, standard environment)
+
+https://cloud.google.com/appengine/docs/standard/python/download
+
+Open up a terminal in the GroundsBot-Website folder.
+
+gcloud config set account info@groundsbot.com
+gcloud auth login
+
+Sign in and authenticate with the info@groundsbot.com account.
+
+gcloud config set project mrsd2018groundsbot
+
+To run a local server at localhost:8080:
+
+dev_appserver.py .
+
+To deploy to the cloud:
+
+gcloud app deploy
+
+Choose us-east1 (option 2) for the server region if it asks.
+
+When prompted, enter Y to deploy to mrsd2018groundsbot.appspot.com
+
+To navigate to the app address online:
+
+gcloud app browse 
